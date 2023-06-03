@@ -9,11 +9,11 @@ import Admin from "./components/navbar/admin";
 import Pos from "./components/navbar/pos";
 import Sidebar from './components/Sidebar';
 import Inventory from './pages/Inventory';
+import Form from './components/Form';
 import Analytics from './pages/Analytics';
 import Customer from './pages/Customer';
 import Booking from './pages/Booking';
 import Dashboard from './pages/Dashboard';
-
  function App() {
     return (
        <BrowserRouter>
@@ -21,6 +21,7 @@ import Dashboard from './pages/Dashboard';
         <Routes>
         <Route path="/admin" element={<Admin/>} />
         <Route path="/pos" element={<Pos/>} />
+       
           </Routes>
           <Sidebar>
           <Routes>
@@ -30,6 +31,8 @@ import Dashboard from './pages/Dashboard';
           <Route path="/Analytics" element={<Analytics/>} />
           <Route path="/Booking" element={<Booking/>} />
           <Route path="/Customer" element={<Customer/>} />
+          <Route path="/form" element={<Form/>} />
+
           </Routes>
           </Sidebar>
        </BrowserRouter> 
