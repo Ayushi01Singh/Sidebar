@@ -21,7 +21,7 @@ import Dashboard from './pages/Dashboard';
         <Routes>
         <Route path="/admin" element={<Admin/>} />
         <Route path="/pos" element={<Pos/>} />
-       
+
           </Routes>
           <Sidebar>
           <Routes>
